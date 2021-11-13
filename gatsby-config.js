@@ -29,5 +29,12 @@ module.exports = {
       },
     },
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: 0,
+        duration: 1000;
+      },
+    },
   ],
 };
