@@ -1,18 +1,17 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 import Landing from '../components/landing';
-import { StaticImage } from 'gatsby-plugin-image';
+import About from '../components/about';
+import Projects from '../components/projects';
+import Contact from '../components/contact';
 
 const IndexPage = () => {
   return (
     <Layout>
       <Landing/>
-      <h1 id="about">About</h1>
-      <p>This is the about page</p>
-      <h1 id="projects">Projects</h1>
-      <p>This is the projects page</p>
-      <h1 id="contact">Contact</h1>
-      <p>This is the contact page</p>
+      <About/>
+      <Projects/>
+      <Contact/>
     </Layout>
   )
 }

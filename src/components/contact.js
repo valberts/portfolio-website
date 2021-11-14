@@ -1,13 +1,13 @@
 import * as React from 'react';
 import SectionLayout from '../components/sectionLayout';
 
-const Landing = () => {
+const Contact = () => {
   return (
     <SectionLayout>
-      <h1>Home</h1>
-      <p>This is the home page</p>
+      <h1 id="contact">Contact</h1>
+      <p>This is the contact page</p>
     </SectionLayout>
   )
 }
 
-export default Landing;
+export default Contact;

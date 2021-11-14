@@ -1,13 +1,13 @@
 import * as React from 'react';
 import SectionLayout from '../components/sectionLayout';
 
-const Landing = () => {
+const About = () => {
   return (
     <SectionLayout>
-      <h1>Home</h1>
-      <p>This is the home page</p>
+      <h1 id="about">About</h1>
+      <p>This is the about page</p>
     </SectionLayout>
   )
 }
 
-export default Landing;
+export default About;

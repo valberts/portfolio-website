@@ -9,6 +9,7 @@ import {
   siteTitle,
   siteHeader,
   siteFooter,
+  pageContainer,
 } from './layout.module.css';
 
 const Layout = ({ children }) => {
@@ -26,15 +27,12 @@ const Layout = ({ children }) => {
       <div className={container}>
         <title>{data.site.siteMetadata.title}</title>
 
-        <header classname={siteHeader}>
-          <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
+        <header className={siteHeader}>
+          <AnchorLink to="/#home" className={navLinkText}>
+            <h1 id="home" className={siteTitle}>{data.site.siteMetadata.title}</h1>
+          </AnchorLink>
           <nav>
             <ul className={navLinks}>
-              <li className={navLinkItem}>
-                <AnchorLink to="/" className={navLinkText}>
-                  Home
-                </AnchorLink>
-              </li>
               <li className={navLinkItem}>
                 <AnchorLink to="/#about" className={navLinkText}>
                   About
@@ -60,11 +58,13 @@ const Layout = ({ children }) => {
         </header>
 
         <main>
-          {children}
+          <div className={pageContainer}>
+           {children}
+          </div>
         </main>
 
         <footer className={siteFooter}>
-          © Copyright 2021 − Vincent Albertsson
+          © Copyright 2021 Vincent Albertsson
         </footer>
       </div>
     )
