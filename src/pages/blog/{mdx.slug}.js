@@ -8,7 +8,8 @@ const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
 
   return(
-    <Layout pageTitle={data.mdx.frontmatter.title}>
+    <Layout>
+      <h1>{data.mdx.frontmatter.title}</h1>
       <p>{data.mdx.frontmatter.date}</p>
       <GatsbyImage
         image={image}
