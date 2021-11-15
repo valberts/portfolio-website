@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: 0,
+        offset: -80,
         duration: 1000,
       },
     },

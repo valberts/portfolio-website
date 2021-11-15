@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import {
@@ -13,6 +14,7 @@ import {
 } from './layout.module.css';
 
 const Layout = ({ children }) => {
+  const [theme, changeTheme]= useState(false)
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -23,13 +25,17 @@ const Layout = ({ children }) => {
     }
     `)
 
+    useEffect(() => {
+      console.log(theme)
+    });
+
     return (
       <div className={container}>
         <title>{data.site.siteMetadata.title}</title>
-
+ 
         <header className={siteHeader}>
           <AnchorLink to="/#home" className={navLinkText}>
-            <h1 id="home" className={siteTitle}>{data.site.siteMetadata.title}</h1>
+            <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
           </AnchorLink>
           <nav>
             <ul className={navLinks}>
@@ -52,6 +58,11 @@ const Layout = ({ children }) => {
                 <Link to="/blog" className={navLinkText}>
                   Blog
                 </Link>
+              </li>
+              <li className={navLinkItem}>
+                <button onClick={() => changeTheme(theme ? false : true)}>
+                  ThemeButton
+                </button>
               </li>
             </ul>
           </nav>
