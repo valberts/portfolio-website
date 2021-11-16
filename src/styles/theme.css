@@ -1,0 +1,12 @@
+:root {
+  --background-color: white;
+  
+  --nav-color: lightgray;
+  --nav-text-color: black;
+  --nav-title-color: black;
+  --nav-link-hover-gradient: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(38,38,38,1) 100%);
+  --nav-text-hover-color: white;
+  --nav-divider-color: #000000;
+
+  --section-background-color: lightcoral;
+}

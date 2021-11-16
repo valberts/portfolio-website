@@ -1,0 +1,22 @@
+.layout {
+}
+
+.heading {
+  color: var(--blog-heading-color);
+}
+
+.metadata {
+  color: var(--blog-metadata-color);
+}
+
+.blog-post-link {
+  color: var(--blog-post-link-color);
+}
+
+.credit {
+  color: var(--blog-credit-color);
+}
+
+.credit-link {
+  color: var(--blog-credit-link-color);
+}

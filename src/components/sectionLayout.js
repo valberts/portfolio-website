@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {
   container,
-} from './sectionLayout.module.css';
+} from '../styles/sectionLayout.module.css';
 
 const SectionLayout = ({ children }) => {
 

@@ -1,0 +1,20 @@
+:root {
+  --background-color: #303030;
+  
+  --nav-color: #212121;
+  --nav-text-color: #bb86fc;
+  --nav-title-color: #bb86fc;
+  --nav-link-hover-gradient: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(187,134,252,1) 100%);
+  --nav-text-hover-color: #000000;
+  --nav-divider-color: #ffffff;
+
+  --footer-text-color: #f5f5e6;
+
+  --section-background-color: lightcoral;
+
+  --blog-heading-color: #f5f5e6;
+  --blog-post-link-color: #bb86fc;
+  --blog-metadata-color: #f5f5e6;
+  --blog-credit-color: #f5f5e6;
+  --blog-credit-link-color: #bb86fc;
+}

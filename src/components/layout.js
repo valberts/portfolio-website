@@ -11,7 +11,8 @@ import {
   siteHeader,
   siteFooter,
   pageContainer,
-} from './layout.module.css';
+  divider,
+} from '../styles/layout.module.css';
 
 const Layout = ({ children }) => {
   const [theme, changeTheme]= useState(false)
@@ -34,29 +35,29 @@ const Layout = ({ children }) => {
         <title>{data.site.siteMetadata.title}</title>
  
         <header className={siteHeader}>
-          <AnchorLink to="/#home" className={navLinkText}>
+          <AnchorLink to="/#home">
             <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
           </AnchorLink>
           <nav>
             <ul className={navLinks}>
               <li className={navLinkItem}>
                 <AnchorLink to="/#about" className={navLinkText}>
-                  About
+                  ABOUT
                 </AnchorLink>
               </li>
               <li className={navLinkItem}>
                 <AnchorLink to="/#projects" className={navLinkText}>
-                  Projects
+                  PROJECTS
                 </AnchorLink>
               </li>
-              <li className={navLinkItem}>
+              <li className={divider}>
                 <AnchorLink to="/#contact" className={navLinkText}>
-                  Contact
+                  CONTACT
                 </AnchorLink>
               </li>
               <li className={navLinkItem}>
                 <Link to="/blog" className={navLinkText}>
-                  Blog
+                  BLOG
                 </Link>
               </li>
               <li className={navLinkItem}>

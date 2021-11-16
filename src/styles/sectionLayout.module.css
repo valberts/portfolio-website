@@ -1,0 +1,7 @@
+@import './theme-dark.css';
+
+.container {
+  background:var(--section-background-color);
+  height:calc(100vh - 80px);
+}
+
