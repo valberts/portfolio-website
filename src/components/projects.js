@@ -3,8 +3,7 @@ import SectionLayout from '../components/sectionLayout';
 
 const Projects = () => {
   return (
-    <SectionLayout>
-      <h1 id="projects">Projects</h1>
+    <SectionLayout anchor="projects" sectionName="PROJECTS">
       <p>This is the projects page</p>
     </SectionLayout>
   )

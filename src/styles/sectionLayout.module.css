@@ -2,6 +2,11 @@
 
 .container {
   background:var(--section-background-color);
+  color: var(--section-text-color);
   height:calc(100vh - 80px);
+}
+
+.heading {
+  color: var(--section-heading-color);
 }
 

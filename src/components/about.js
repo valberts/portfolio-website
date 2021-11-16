@@ -3,8 +3,7 @@ import SectionLayout from '../components/sectionLayout';
 
 const About = () => {
   return (
-    <SectionLayout>
-      <h1 id="about">About</h1>
+    <SectionLayout anchor="about" sectionName="ABOUT">
       <p>This is the about page</p>
     </SectionLayout>
   )

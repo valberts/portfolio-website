@@ -7,6 +7,8 @@
 }
 
 .site-header {
+    font-family: "Roboto Mono", monospace;
+    background: transparent;
     background-color: var(--nav-color);
     position: fixed;
     top: 0;
@@ -16,6 +18,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.background-container {
+    background: black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    transition: width 0.3s ease 0s;
+    z-index: -1;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 4px 0px;
+    width: 0%;
 }
 
 .site-footer {
@@ -35,16 +49,28 @@
     margin: 15px 15px 0px 0px;
 }
 
+.divider {
+    margin: 15px 15px 0px 0px;
+    
+}
+
+.divider:after {
+    content: '';
+    padding-left: 10px;
+    border-right: 1px solid var(--nav-divider-color);
+}
+
 .nav-link-text {
+    background: rgba(0, 0, 0, 0);
     color: var(--nav-text-color);
     padding: 10px 5px 10px 5px;
     text-decoration: none;
 }
 
 .nav-link-text:hover {
-    background-color: var(--nav-link-hover-color);
-    background: var(--nav-link-hover-gradient);
     color: var(--nav-text-hover-color);
+    background: var(--nav-link-hover-gradient-alt);
+    transition: 0.5s;
 }
 
 .site-title {
@@ -61,17 +87,6 @@
     margin-top: 80px;
     max-width: 500px;
     font-family: sans-serif;
-}
-
-.divider {
-    margin: 15px 15px 0px 0px;
-    
-}
-
-.divider:after {
-    content: '';
-    padding-left: 10px;
-    border-right: 1px solid var(--nav-divider-color);
 }
 
 html, body {

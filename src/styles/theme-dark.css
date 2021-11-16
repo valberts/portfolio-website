@@ -1,20 +1,23 @@
 :root {
-  --background-color: #202020;
+  --background-color: #1c1f20;
   
   --nav-color: #303030;
-  --nav-text-color: #bb86fc;
-  --nav-title-color: #bb86fc;
+  --nav-text-color: #66CCAD;
+  --nav-title-color: #66CCAD;
   --nav-link-hover-gradient: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(187,134,252,1) 100%);
+  --nav-link-hover-gradient-alt: linear-gradient(90deg, rgba(245,245,230,1) 0%, rgba(102,204,173,1) 100%);
   --nav-text-hover-color: #000000;
-  --nav-divider-color: #ffffff;
+  --nav-divider-color: #c0c2c4;
 
-  --footer-text-color: #f5f5e6;
+  --footer-text-color: #c0c2c4;
 
-  --section-background-color: #404040;
+  --section-background-color: #343a3f;
+  --section-heading-color: #66CCAD;
+  --section-text-color: #c0c2c4;
 
-  --blog-heading-color: #f5f5e6;
+  --blog-heading-color: #c0c2c4;
   --blog-post-link-color: #bb86fc;
-  --blog-metadata-color: #f5f5e6;
-  --blog-credit-color: #f5f5e6;
+  --blog-metadata-color: #c0c2c4;
+  --blog-credit-color: #c0c2c4;
   --blog-credit-link-color: #bb86fc;
 }

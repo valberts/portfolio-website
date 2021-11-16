@@ -3,8 +3,7 @@ import SectionLayout from '../components/sectionLayout';
 
 const Landing = () => {
   return (
-    <SectionLayout>
-      <h1 id="home">Home</h1>
+    <SectionLayout anchor="home" sectionName="HOME">
       <p>This is the home page</p>
     </SectionLayout>
   )
