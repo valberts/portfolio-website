@@ -1,7 +1,7 @@
 :root {
-  --background-color: #303030;
+  --background-color: #202020;
   
-  --nav-color: #212121;
+  --nav-color: #303030;
   --nav-text-color: #bb86fc;
   --nav-title-color: #bb86fc;
   --nav-link-hover-gradient: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(187,134,252,1) 100%);
@@ -10,7 +10,7 @@
 
   --footer-text-color: #f5f5e6;
 
-  --section-background-color: lightcoral;
+  --section-background-color: #404040;
 
   --blog-heading-color: #f5f5e6;
   --blog-post-link-color: #bb86fc;
