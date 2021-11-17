@@ -9,13 +9,15 @@ import {
   navLinkText,
   siteTitle,
   siteHeader,
+  siteHeaderActive,
   siteFooter,
   pageContainer,
   divider,
 } from '../styles/layout.module.css';
 
 const Layout = ({ children }) => {
-  const [theme, changeTheme]= useState(false)
+  const [theme, changeTheme] = useState(false)
+  const [navbar, setNavBar] = useState(false)
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -30,11 +32,21 @@ const Layout = ({ children }) => {
       console.log(theme)
     });
 
+    const changeNav = () => {
+      if (window.scrollY !== 0) {
+        setNavBar(true)
+      } else {
+        setNavBar(false)
+      }
+    }
+
+    window.addEventListener('scroll', changeNav);
+
     return (
       <div className={container}>
         <title>{data.site.siteMetadata.title}</title>
  
-        <header className={siteHeader}>
+        <header className={navbar ? siteHeaderActive : siteHeader}>
           <AnchorLink to="/#home">
             <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
           </AnchorLink>

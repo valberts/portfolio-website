@@ -2,22 +2,42 @@
 
 .container {
     font-family: sans-serif;
-    background: var(--background-color);
+    /* background: var(--background-color); */
     min-height: 100vh;
 }
 
 .site-header {
     font-family: "Roboto Mono", monospace;
-    background: transparent;
     background-color: var(--nav-color);
     position: fixed;
     top: 0;
-    left: 0;
+    /* left: 0; */
     right: 0;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 0%;
+    transition: width 0.3s ease 0s;
+}
+
+.site-header-active {
+    font-family: "Roboto Mono", monospace;
+    background-color: var(--nav-color);
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: width 0.3s ease 0s;
+}
+
+.site-header.active {
+    width: 100%;
 }
 
 .background-container {
@@ -91,4 +111,5 @@
 
 html, body {
     margin:0px;
+    background-color: var(--background-color);
   }
