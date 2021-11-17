@@ -30,6 +30,8 @@ const Layout = ({ children }) => {
 
     useEffect(() => {
       console.log(theme)
+      window.addEventListener('scroll', changeNav);
+      window.removeEventListener('scroll', changeNav);
     });
 
     const changeNav = () => {
@@ -40,16 +42,14 @@ const Layout = ({ children }) => {
       }
     }
 
-    window.addEventListener('scroll', changeNav);
-
     return (
       <div className={container}>
         <title>{data.site.siteMetadata.title}</title>
  
         <header className={navbar ? siteHeaderActive : siteHeader}>
-          <AnchorLink to="/#home">
+          <Link to="/">
             <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
-          </AnchorLink>
+          </Link>
           <nav>
             <ul className={navLinks}>
               <li className={navLinkItem}>
