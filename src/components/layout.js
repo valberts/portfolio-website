@@ -30,17 +30,18 @@ const Layout = ({ children }) => {
 
     useEffect(() => {
       console.log(theme)
-      window.addEventListener('scroll', changeNav);
-      window.removeEventListener('scroll', changeNav);
-    });
 
-    const changeNav = () => {
-      if (window.scrollY !== 0) {
-        setNavBar(true)
-      } else {
-        setNavBar(false)
+      const changeNav = () => {
+        if (window.scrollY !== 0) {
+          setNavBar(true)
+        } else {
+          setNavBar(false)
+        }
       }
-    }
+
+      window.addEventListener('scroll', changeNav);
+      return () => window.removeEventListener('scroll', changeNav);
+    }, [navbar, theme]);
 
     return (
       <div className={container}>
