@@ -1,0 +1,14 @@
+@import './theme-dark.css';
+
+.container {
+  background:var(--section-background-color);
+  color: var(--section-text-color);
+  height: 633px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.heading {
+  color: var(--section-heading-color);
+}
+

@@ -1,11 +1,15 @@
 import * as React from 'react';
-import SectionLayout from '../components/sectionLayout';
+import {
+  container,
+  heading,
+} from '../styles/landing.module.css';
 
 const Landing = () => {
   return (
-    <SectionLayout anchor="home" sectionName="HOME">
+    <div className={container}>
+      <h1 id="home" className={heading}></h1>
       <p>This is the home page</p>
-    </SectionLayout>
+    </div>
   )
 }
 

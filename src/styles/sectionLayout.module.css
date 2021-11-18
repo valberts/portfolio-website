@@ -3,7 +3,9 @@
 .container {
   background:var(--section-background-color);
   color: var(--section-text-color);
-  height:calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .heading {
