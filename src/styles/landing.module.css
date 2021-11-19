@@ -1,14 +1,31 @@
 @import './theme-dark.css';
 
 .container {
-  background:var(--section-background-color);
+  /* background:var(--section-background-color); */
   color: var(--section-text-color);
-  height: 633px;
+  min-height: calc(100vh - 80px);
   margin-left: 120px;
   margin-right: 120px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem; 
 }
 
 .heading {
   color: var(--section-heading-color);
 }
 
+.intro {
+  margin-top: 30vh;
+}
+
+.name-heading {
+  color: var(--section-heading-color);
+}
+
+.introduction {
+}
+
+.brief {
+  margin-top: 5vh;
+  width: 50%;
+}

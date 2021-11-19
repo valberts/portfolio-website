@@ -49,7 +49,8 @@ const Layout = ({ children }) => {
  
         <header className={navbar ? siteHeaderActive : siteHeader}>
           <Link to="/">
-            <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1>
+            {/* <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1> */}
+            <h1 className={siteTitle}>valberts.dev</h1>
           </Link>
           <nav>
             <ul className={navLinks}>
