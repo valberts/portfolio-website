@@ -26,6 +26,7 @@
 }
 
 .brief {
-  margin-top: 5vh;
-  width: 50%;
+  /* fix this margin and fix the text size here */
+  margin-top: 5vh; 
+  width: 50%; 
 }
