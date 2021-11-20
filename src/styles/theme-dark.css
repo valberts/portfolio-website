@@ -1,8 +1,10 @@
 :root {
   --background-color: #1c1f20;
+  --background-color-alt: #171819;
   
   --nav-color: #303030;
-  --nav-text-color: #66CCAD;
+  --nav-color-alt: #212526;
+  --nav-text-color: #c0c2c4;
   --nav-title-color: #c0c2c4;
   --nav-link-hover-gradient: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(187,134,252,1) 100%);
   --nav-link-hover-gradient-alt: linear-gradient(90deg, rgba(245,245,230,1) 0%, rgba(102,204,173,1) 100%);
@@ -12,6 +14,7 @@
   --footer-text-color: #c0c2c4;
 
   --section-background-color: #343a3f;
+  --section-background-color-alt: #212526;
   --section-heading-color: #66CCAD;
   --section-text-color: #c0c2c4;
 
