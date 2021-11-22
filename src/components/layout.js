@@ -17,7 +17,6 @@ import {
 } from '../styles/layout.module.css';
 
 const Layout = ({ children }) => {
-  const [theme, changeTheme] = useState(false)
   const [navbar, setNavBar] = useState(false)
   const data = useStaticQuery(graphql`
     query {
@@ -30,8 +29,6 @@ const Layout = ({ children }) => {
     `)
 
     useEffect(() => {
-      console.log(theme)
-
       const changeNav = () => {
         if (window.scrollY !== 0) {
           setNavBar(true)
@@ -42,7 +39,7 @@ const Layout = ({ children }) => {
 
       window.addEventListener('scroll', changeNav);
       return () => window.removeEventListener('scroll', changeNav);
-    }, [navbar, theme]);
+    }, [navbar]);
 
     return (
       <div className={container}>
@@ -75,11 +72,6 @@ const Layout = ({ children }) => {
                   BLOG
                 </Link>
               </li>
-              {/* <li className={navLinkItem}>
-                <button onClick={() => changeTheme(theme ? false : true)}>
-                  ThemeButton
-                </button>
-              </li> */}
             </ul>
           </nav>
         </header>

@@ -4,7 +4,7 @@
   /* background:var(--section-background-color); */
   color: var(--section-text-color);
   min-height: calc(100vh - 80px);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem; 
   display: grid;
   grid-template-columns: 120px 1fr 120px;

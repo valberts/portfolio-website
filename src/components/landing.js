@@ -19,17 +19,17 @@ const Highlight = styled.span`
   color: var(--section-heading-color);
 `
 
-const Landing = () => {
+const Landing = ({currentTheme, callback}) => {
   return (
     <div className={container}>
-      <div classname={left}>
+      <div className={left}>
         <a href="mailto:albertsson.vincent@gmail.com" className={icon}>
           <FontAwesomeIcon icon={faEnvelopeSquare} />
         </a>
-        <a href="https://www.linkedin.com/in/vincentalbertsson/" className={icon}>
+        <a href="https://www.linkedin.com/in/vincentalbertsson/" target="_blank" rel="noreferrer"className={icon}>
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="https://github.com/valberts" className={icon}>
+        <a href="https://github.com/valberts" target="_blank" rel="noreferrer" className={icon}>
           <FontAwesomeIcon icon={faGithubSquare} />
         </a>
       </div> 
@@ -40,8 +40,8 @@ const Landing = () => {
         <h2 className={introduction}>I'm a <Highlight>Computer Science Student</Highlight> currently building up my portfolio.</h2>
         <h3 className={brief}>I'm coming up with ideas and working on projects to figure out what I enjoy doing and to  gain some more experience.</h3>
       </div>
-      <div classname={right}>
-        <button>
+      <div className={right}>
+        <button onClick={() => callback(currentTheme ? false : true)}>
           Theme
         </button>
       </div>
