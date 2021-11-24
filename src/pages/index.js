@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import { useColorMode } from 'theme-ui'
 import Layout from '../components/layout';
 import Landing from '../components/landing';
 import About from '../components/about';
@@ -7,18 +8,18 @@ import Projects from '../components/projects';
 import Contact from '../components/contact';
 
 const IndexPage = () => {
-  const [theme, setTheme] = useState(false)
+  const [colorMode, setColorMode] = useColorMode();
 
   useEffect(() => {
-    console.log(theme)  
-  }, [theme]);
+    console.log(colorMode)  
+  }, [colorMode]);
 
   return (
-    <Layout currentTheme={theme}>
-      <Landing currentTheme={theme} callback={setTheme}/>
-      <About currentTheme={theme}/>
-      <Projects currentTheme={theme}/>
-      <Contact currentTHeme={theme}/>
+    <Layout>
+      <Landing colorMode={colorMode} callback={setColorMode}/>
+      <About/>
+      <Projects/>
+      <Contact/>
     </Layout>
   )
 }

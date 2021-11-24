@@ -19,7 +19,9 @@ const Highlight = styled.span`
   color: var(--section-heading-color);
 `
 
-const Landing = ({currentTheme, callback}) => {
+const Landing = ({colorMode, callback}) => {
+  const nextColorMode = colorMode === 'light' ? 'dark' : 'light';
+
   return (
     <div className={container}>
       <div className={left}>
@@ -41,7 +43,7 @@ const Landing = ({currentTheme, callback}) => {
         <h3 className={brief}>I'm coming up with ideas and working on projects to figure out what I enjoy doing and to  gain some more experience.</h3>
       </div>
       <div className={right}>
-        <button onClick={() => callback(currentTheme ? false : true)}>
+        <button onClick={() => callback(nextColorMode)}>
           Theme
         </button>
       </div>
