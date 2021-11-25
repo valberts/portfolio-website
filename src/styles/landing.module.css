@@ -1,8 +1,7 @@
 @import './theme-dark.css';
 
 .container {
-  /* background:var(--section-background-color); */
-  color: var(--section-text-color);
+  color: var(--text);
   min-height: calc(100vh - 80px);
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem; 
@@ -26,7 +25,7 @@
   font-size: 2rem;
   margin: 46px;
   text-decoration: none;
-  color: var(--section-text-color);
+  color: var(--text);
 }
 
 .icon:nth-child(2) {
@@ -42,7 +41,7 @@
 }
 
 .name-heading {
-  color: var(--section-heading-color);
+  color: var(--primary);
   margin-top: 0px;
   font-size: 3rem;
 }

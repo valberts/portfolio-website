@@ -1,14 +1,14 @@
 @import './theme-dark.css';
 
 .container {
-  background: var(--section-background-color-alt);
-  color: var(--section-text-color);
+  background: var(--layer1);
+  color: var(--text);
   height: calc(100vh - 80px);
   margin-left: 120px;
   margin-right: 120px;
 }
 
 .heading {
-  color: var(--section-heading-color);
+  color: var(--primary);
 }
 

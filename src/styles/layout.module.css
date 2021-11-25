@@ -3,13 +3,12 @@
 
 .container {
     font-family: sans-serif;
-    /* background: var(--background-color); */
     min-height: 100vh;
 }
 
 .site-header {
     font-family: "Noto Sans", sans-serif;
-    background-color: var(--nav-color-alt);
+    background-color: var(--layer1);
     position: fixed;
     top: 0;
     right: 0;
@@ -24,7 +23,7 @@
 .site-header-active {
     z-index: 1;
     font-family: "Noto Sans", sans-serif;
-    background-color: var(--nav-color-alt);
+    background-color: var(--layer1);
     position: fixed;
     top: 0;
     right: 0;
@@ -39,7 +38,7 @@
 
 .site-footer {
     text-align: center;
-    color: var(--footer-text-color);
+    color: var(--text);
 }
 
 .nav-links {
@@ -62,13 +61,13 @@
 .divider:after {
     content: '';
     padding-left: 10px;
-    border-right: 1px solid var(--nav-divider-color);
+    border-right: 1px solid var(--text);
 }
 
 .nav-link-text {
     font-family: "Roboto Mono", monospace;
     background: rgba(0, 0, 0, 0);
-    color: var(--nav-text-color);
+    color: var(--text);
     padding: 9px 5px 10px 5px;
     text-decoration: none;
     font-weight: 500;
@@ -76,8 +75,8 @@
 }
 
 .nav-link-text:hover {
-    color: var(--nav-text-hover-color);
-    background: var(--nav-link-hover-gradient-alt);
+    color: var(--hover);
+    background: var(--gradient);
     transition: 0.5s;
 }
 
@@ -86,7 +85,7 @@
     top: 0px;
     left: 120px;
     font-size: 2rem;
-    color: var(--nav-title-color);
+    color: var(--text);
     font-weight: 700;
     margin-top: 15px;
 }
@@ -96,7 +95,7 @@
     top: 0px;
     left: 120px;
     font-size: 2rem;
-    color: var(--nav-title-color);
+    color: var(--text);
     font-weight: 700;
     margin-top: 15px;
     text-decoration: underline;
@@ -110,6 +109,6 @@
 
 html, body {
     margin:0px;
-    background-color: var(--background-color);
+    background-color: var(--background);
     overflow-x: hidden;
   }

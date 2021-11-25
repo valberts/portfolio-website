@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
           <Link to="/">
             {/* <h1 className={siteTitle}>{data.site.siteMetadata.title}</h1> */}
             <h1 className={navbar ? siteTitleActive : siteTitle}>valberts.dev</h1>
-          </Link>
+          </Link> 
           <nav>
             <ul className={navLinks}>
               <li className={navLinkItem}>

@@ -2,21 +2,21 @@
 }
 
 .heading {
-  color: var(--blog-heading-color);
+  color: var(--text);
 }
 
 .metadata {
-  color: var(--blog-metadata-color);
+  color: var(--text);
 }
 
 .blog-post-link {
-  color: var(--blog-post-link-color);
+  color: var(--link);
 }
 
 .credit {
-  color: var(--blog-credit-color);
+  color: var(--text);
 }
 
 .credit-link {
-  color: var(--blog-credit-link-color);
+  color: var(--link);
 }
